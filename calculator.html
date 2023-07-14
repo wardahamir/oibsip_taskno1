@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   <link rel="stylesheet" href="calculator.css"/>
+  
+</head>
+<body>
+  <div class="Main">
+    <div class="calculator">
+        <div class="display">
+          <input type="text" id="result" readonly style="width: 294px; height: 25px;">
+        </div>
+        <div class="buttons">
+            <!-- 1st row-->
+            <button onclick="clearScreen()">Clear</button>
+            <button class="operator" onclick="addToScreen('%')">%</button>
+            <button class="operator" onclick="addToScreen('/')">/</button>
+            <button onclick="backspace()">Back</button>
+           
+          <!-- 2nd row -->
+          <button class="number" onclick="addToScreen('7')">7</button>
+          <button class="number" onclick="addToScreen('8')">8</button> 
+          <button class="number" onclick="addToScreen('9')">9</button>
+          <button class="operator" onclick="addToScreen('*')">*</button>
+          <!-- 3rd row -->
+          <button class="number" onclick="addToScreen('4')">4</button>
+          <button class="number" onclick="addToScreen('5')">5</button>
+          <button class="number" onclick="addToScreen('6')">6</button>
+          <button class="operator" onclick="addToScreen('-')">-</button>
+          <!-- 4th row -->
+          <button class="number" onclick="addToScreen('1')">1</button>
+          <button class="number" onclick="addToScreen('2')">2</button>
+          <button class="number" onclick="addToScreen('3')">3</button>
+          <button class="operator" onclick="addToScreen('+')">+</button>
+         <!-- 5th row -->
+          <button class="number" onclick="addToScreen('.')">.</button> 
+          <button class="number" onclick="addToScreen('0')">0</button>
+          <button class="number" onclick="addToScreen('+-')">+-</button>
+          <button onclick="calculate()" >Enter</button>
+          
+    
+        
+         
+         
+        </div>
+      </div>
+    </div>
+      <script src="calculator.js"></script>
+</body>
+</html>
